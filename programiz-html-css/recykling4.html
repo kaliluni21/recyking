@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+    <title>RECYKLING </title>
+        <meta name="description" content="Przed Tobą strona, która pomoże Ci zrozumieć, co to recykling i jak wprowadzić go do życia codziennego." />
+        <meta name="keywords" content="recykling, śmieci odpady, segregacja śmieci, śmietniki, ekoport, PSZOK, odpady wielkogabaretowe, gdzie wyrzucić" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body>
+<div class="header">
+  <h1>recyKING</h1>
+  <p><h5>Pomożemy ci odpowiednio zutylizować Twoje odpady!</h5></p>
+</div>
+<div class="linki">
+  <a href="recykling.html">Czym jest recykling?</a>
+  <a href="recykling2.html">Jak segregować odpady?</a>
+    <a href="recykling3.html">Gdzie wyrzucać RTV i AGD?</a>
+  </div>
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+      <h1>Obliczenia - efektywność recyklingu
+</h1>
+      <h5>źródło: chatGPT</h5>
+      <div class="recykling.jpg" style="height:200px;">Image</div>
+      <p>W sprawie recyklingu w grę wchodzi obliczanie jego efektywności. W tym celu Oblicza się procentową ilość materiałów, która jest faktycznie przetwarzana i wykorzystywana ponownie z odpadów. Wyższy odsetek recyklingu oznacza mniejszą ilość odpadów, która trafia na składowisko.
+Aby obliczyć efektywność recyklingu, wykonuje się następujące kroki:
+Określenie ilości materiałów poddanych recyklingowi: Pierwszym krokiem jest określenie ilości zużytych materiałów, które są gromadzone i poddawane recyklingowi. Może to obejmować zużyty papier, plastik, szkło, metal i inne materiały.
+Określenie ilości przetworzonych materiałów: Następnie należy określić ilość materiałów, która została faktycznie przetworzona i wykorzystana ponownie w procesie recyklingu. To może obejmować ilość przetworzonego papieru, plastiku, szkła, metalu i innych surowców.
+</p>
+    </div>
+    <div class="card">
+      <h1>Oblicz wskaźnik recyklingu!</h1>
+      <p>Wskaźnik recyklingu można obliczyć, stosując następującą formułę:
+Wskaźnik recyklingu = (Ilość przetworzonych materiałów / Ilość materiałów poddanych recyklingowi) x 100
+Wynik jest wyrażony w procentach i reprezentuje odsetek materiałów, który został przetworzony i wykorzystany ponownie w procesie recyklingu.
+</p>
+<h2>Wskaźnik recyklingu</h2>
+ 
+  <label for="total-waste">Całkowita ilość odpadów:</label>
+  <input type="number" id="total-waste" min="0">
+  <br>
+  <label for="recycled-waste">Ilość zrecyklowanych odpadów:</label>
+  <input type="number" id="recycled-waste" min="0">
+  <br>
+  <button onclick="calculateRecyclingRate()">Oblicz</button>
+  <br>
+  <div id="result"></div>
+  <script>
+    function calculateRecyclingRate() {
+      const totalWaste = parseFloat(document.getElementById('total-waste').value);
+      const recycledWaste = parseFloat(document.getElementById('recycled-waste').value);
+      if (isNaN(totalWaste) || isNaN(recycledWaste)) {
+        document.getElementById('result').innerHTML = "Podaj poprawne wartości.";
+        return;
+      }
+      if (totalWaste < 0 || recycledWaste < 0 || recycledWaste > totalWaste) {
+        document.getElementById('result').innerHTML = "Podaj poprawne wartości.";
+        return;
+      }
+      const recyclingRate = (recycledWaste / totalWaste) * 100;
+      const formattedRate = recyclingRate.toFixed(2);
+      document.getElementById('result').innerHTML = "Wskaźnik recyklingu: " + formattedRate + "%";
+    }
+  </script>
+      <p>Analiza i ocena efektywności: Następnie należy przeanalizować wyniki i ocenić efektywność recyklingu. Wyższy wskaźnik recyklingu oznacza większą efektywność, ponieważ większa ilość materiałów jest przetwarzana i wykorzystywana ponownie, a mniej trafia na składowiska.
+</p>
+      <p><!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body>
+</body>
+</html>.</p>
+    </div>
+  </div>
+  <div class="rightcolumn">
+    <div class="card">
+      <h2>Nasza misja</h2>
+      <p>Naszą misją jest pomoc ludziom w odpowiednim segregowaniu śmieci. Nasza strona stanowi przewodnik w twojej podróży z recyglingiem. Nauczmy się dbać o planetę razem! </p>
+    </div>
+    <div class="card">
+      <h3>ZADOWOLENI KLIENCI :)))))</h3>
+      <div class="fakeimg"><p>Image</p></div>
+      <div class="fakeimg"><p>Image</p></div>
+      <div class="fakeimg"><p>Image</p></div>
+    </div>
+    <div class="card">
+      <h3>Zaobserwuj nas!</h3>
+      <p>Od 69  lat prężnie działamy na Instagramie i Facebooku po to, aby pokazywać Wam, że segregowanie śmieci może być satysfakcjonujące i przyjemne. Nasze działania możesz śledzić obserwując konto @kochamśmieci</p>
+    </div>
+  </div>
+</div>
+<div class="footer">
+  <h2>Skontaktuj się z nami!
+<a href="mailto:smieciowikrólowie@gmail.com">smieciowikrólowie@gmail.com</a></h2>
+</div>
+</body>
+</html>
